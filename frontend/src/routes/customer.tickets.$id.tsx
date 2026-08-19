@@ -28,7 +28,7 @@ import {
   type Ticket,
 } from "@/lib/ticket-store";
 
-const API_URL = "http://127.0.0.1:5000";
+const API_URL = "https://intelliroute-ai-production.up.railway.app";
 const POLL_INTERVAL = 3000;
 
 export const Route = createFileRoute(
@@ -37,7 +37,7 @@ export const Route = createFileRoute(
   head: () => ({
     meta: [
       {
-        title: "Ticket Details — IntelliRoute AI",
+        title: "Ticket Details â€” IntelliRoute AI",
       },
       {
         name: "description",
@@ -341,7 +341,7 @@ function CustomerTicketDetail() {
                 {ticket.assignee ||
                   "Support"}
                 {ticket.resolvedAt
-                  ? ` · ${formatDate(
+                  ? ` Â· ${formatDate(
                       ticket.resolvedAt,
                     )}`
                   : ""}
@@ -419,7 +419,7 @@ function CustomerTicketDetail() {
             {ticket.messages.length ===
             0 ? (
               <p className="rounded-lg border border-dashed border-border px-4 py-6 text-center text-sm text-muted-foreground">
-                No updates yet — you'll be
+                No updates yet â€” you'll be
                 notified as soon as{" "}
                 {ticket.assignee ||
                   "your support agent"}{" "}

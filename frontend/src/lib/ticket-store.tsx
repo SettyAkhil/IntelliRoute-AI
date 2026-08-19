@@ -223,7 +223,7 @@ const SESSION_KEY =
   "airoute-session-v2";
 
 const API_URL =
-  "http://127.0.0.1:5000";
+  "https://intelliroute-ai-production.up.railway.app";
 
 /*
 |--------------------------------------------------------------------------
@@ -239,7 +239,7 @@ const TICKET_REFRESH_INTERVAL = 2000;
 
 /*
 |--------------------------------------------------------------------------
-| Convert MongoDB ID → Frontend numeric ID
+| Convert MongoDB ID â†’ Frontend numeric ID
 |--------------------------------------------------------------------------
 */
 
@@ -265,7 +265,7 @@ function mongoIdToNumber(
 
 /*
 |--------------------------------------------------------------------------
-| Convert MongoDB ticket → Frontend ticket
+| Convert MongoDB ticket â†’ Frontend ticket
 |--------------------------------------------------------------------------
 */
 
@@ -992,7 +992,7 @@ export function StoreProvider({
                         ticket.subject,
 
                       meta:
-                        `Priority: ${ticket.priority} · ${ticket.department}`,
+                        `Priority: ${ticket.priority} Â· ${ticket.department}`,
 
                       at:
                         ticket.createdAt,
@@ -1499,7 +1499,7 @@ export function StoreProvider({
           await refreshTickets();
 
           /*
-           * Employee → Customer
+           * Employee â†’ Customer
            */
           if (
             role ===
@@ -1531,7 +1531,7 @@ export function StoreProvider({
           }
 
           /*
-           * Customer → Employee
+           * Customer â†’ Employee
            */
           if (
             role ===

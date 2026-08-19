@@ -11,7 +11,7 @@ export const Route = createFileRoute("/customer/tickets/")({
   head: () => ({
     meta: [
       {
-        title: "My Tickets — IntelliRoute AI",
+        title: "My Tickets â€” IntelliRoute AI",
       },
       {
         name: "description",
@@ -20,7 +20,7 @@ export const Route = createFileRoute("/customer/tickets/")({
       },
       {
         property: "og:title",
-        content: "My Tickets — IntelliRoute AI",
+        content: "My Tickets â€” IntelliRoute AI",
       },
       {
         property: "og:description",
@@ -58,7 +58,7 @@ function MyTickets() {
         setError(null);
 
         const response = await fetch(
-          `http://127.0.0.1:5000/api/customer/tickets/${encodeURIComponent(
+          `https://intelliroute-ai-production.up.railway.app/api/customer/tickets/${encodeURIComponent(
             session.email,
           )}`,
         );

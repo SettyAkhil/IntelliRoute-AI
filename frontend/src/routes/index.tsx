@@ -25,7 +25,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: "IntelliRoute AI — Smart Support Ticket Assignment",
+        title: "IntelliRoute AI â€” Smart Support Ticket Assignment",
       },
       {
         name: "description",
@@ -35,7 +35,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:title",
         content:
-          "IntelliRoute AI — Smart Support Ticket Assignment",
+          "IntelliRoute AI â€” Smart Support Ticket Assignment",
       },
       {
         property: "og:description",
@@ -50,13 +50,13 @@ export const Route = createFileRoute("/")({
 
 /*
  * Local development:
- * http://127.0.0.1:5000
+ * https://intelliroute-ai-production.up.railway.app
  *
  * Production:
  * Set VITE_API_URL in your frontend deployment environment.
  */
 const API_URL =
-  import.meta.env["VITE_API_URL"] || "http://127.0.0.1:5000";
+  import.meta.env["VITE_API_URL"] || "https://intelliroute-ai-production.up.railway.app";
 
 const DEPARTMENTS: Department[] = [
   "IT Support",
@@ -1422,7 +1422,7 @@ function Landing() {
           <div className="flex flex-col gap-2 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
 
             <p>
-              © {new Date().getFullYear()} IntelliRoute AI.
+              Â© {new Date().getFullYear()} IntelliRoute AI.
             </p>
 
             <p>

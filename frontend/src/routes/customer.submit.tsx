@@ -22,7 +22,7 @@ export const Route = createFileRoute("/customer/submit")({
   head: () => ({
     meta: [
       {
-        title: "Submit a Support Ticket — IntelliRoute AI",
+        title: "Submit a Support Ticket â€” IntelliRoute AI",
       },
       {
         name: "description",
@@ -31,7 +31,7 @@ export const Route = createFileRoute("/customer/submit")({
       },
       {
         property: "og:title",
-        content: "Submit a Support Ticket — IntelliRoute AI",
+        content: "Submit a Support Ticket â€” IntelliRoute AI",
       },
       {
         property: "og:description",
@@ -81,7 +81,7 @@ function SubmitTicket() {
 
     try {
       const response = await fetch(
-        "http://127.0.0.1:5000/api/predict",
+        "https://intelliroute-ai-production.up.railway.app/api/predict",
         {
           method: "POST",
           headers: {
@@ -418,7 +418,7 @@ function SubmitTicket() {
                     {loading ? (
                       <>
                         <Loader2 className="size-4 animate-spin" />
-                        Analyzing & routing ticket…
+                        Analyzing & routing ticketâ€¦
                       </>
                     ) : (
                       <>
