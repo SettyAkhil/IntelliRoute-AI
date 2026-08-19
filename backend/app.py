@@ -19,7 +19,14 @@ from bson import ObjectId
 # ============================================================
 
 app = Flask(__name__)
-CORS(app)
+CORS(
+    app,
+    origins=[
+        "http://localhost:5173",
+        "https://intelliroute-ai-production.up.railway.app"
+    ],
+    supports_credentials=True
+)
 
 
 # ============================================================
