@@ -11,6 +11,9 @@ frontend/node_modules/
 __pycache__/
 *.py[cod]
 
+# Editor history
+.history/
+
 # Frontend build
 frontend/dist/
 

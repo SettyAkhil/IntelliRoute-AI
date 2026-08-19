@@ -55,9 +55,7 @@ def utc_now_datetime():
 # ============================================================
 
 BASE_DIR = os.path.dirname(
-    os.path.dirname(
-        os.path.abspath(__file__)
-    )
+    os.path.abspath(__file__)
 )
 
 MODEL_DIR = os.path.join(
