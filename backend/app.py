@@ -23,7 +23,7 @@ CORS(
     app,
     origins=[
         "http://localhost:5173",
-        "https://intelliroute-ai-production.up.railway.app"
+        "https://intelli-route-ai-three.vercel.app"
     ],
     supports_credentials=True
 )
